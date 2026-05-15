@@ -1,0 +1,233 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #202124;
+}
+
+header {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.app-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.app-icon:hover {
+    background-color: rgba(60,64,67,0.08);
+}
+
+.app-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+.profile-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 9px 23px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    background-color: #1b66c9;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3), 0 1px 3px 1px rgba(66,133,244,0.15);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.logo-container {
+    margin-bottom: 25px;
+}
+
+.logo-container img {
+    height: 92px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 584px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px 8px 5px 14px;
+    box-sizing: border-box;
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    height: 46px;
+}
+
+.search-bar:hover, .search-bar:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+}
+
+.search-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #202124;
+    height: 34px;
+    background-color: transparent;
+}
+
+.mic-icon, .lens-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.mic-icon svg, .lens-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.search-buttons {
+    margin-top: 28px;
+    display: flex;
+    gap: 12px;
+}
+
+.search-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-buttons button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.language-offer {
+    font-size: 13px;
+    color: #4d5156;
+    margin-top: 28px;
+}
+
+.language-offer a {
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.language-offer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #70757a;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #70757a;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.left-links, .right-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+@media (max-width: 800px) {
+    .footer-links {
+        justify-content: space-evenly;
+    }
+}
